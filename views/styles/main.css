@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Verdana, Tahoma;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.formWrapper {
+	margin: 0 auto;
+	background: #999;
+	padding: 20px;
+}
+
+.File {
+	background: #FFF;
+}
+
+.Width350 {
+	width: 350px;
+}

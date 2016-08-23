@@ -1,0 +1,11 @@
+doctype html
+html
+	head
+		title= title
+		include ./common/head_common.pug
+	body
+		h1 Listing files
+		ul.files
+			for file in files
+				li.file 
+					a(href="./static/uploads/"+file)= file

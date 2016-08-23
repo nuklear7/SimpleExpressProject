@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		title= title
+		include ./common/head_common.pug
+	body
+		h1.title= message
+		div.formWrapper.Width350
+			form(action="/upload" method="POST" enctype="multipart/form-data")
+				input(type="file" name="file" size="50").File
+				input(type="submit" value="Upload")
+			
+			form(action="/get_files")
+				input(type="submit" value="List files")
