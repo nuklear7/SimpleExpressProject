@@ -4,7 +4,6 @@
 var express = require('express');
 var app = express();
 var fs = require("fs");
-var bodyParser = require('body-parser');
 var multer = require('multer');
 var upload = multer({dest : 'public/uploads/'});
 var type = upload.single('file');
@@ -37,8 +36,6 @@ app.post('/upload', type, function(req, res) {
 	
 	// Handling upload events.
 	src.on('end', function() {
-		var upload_files = null;
-		
 		res.render("index", {title: 'HeyHo :)', 
 			message: 'Successful uploading! :)'});
 	});
